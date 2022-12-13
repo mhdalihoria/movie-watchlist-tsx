@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import addIcon from '../images/add-icon.png'
+import removeIcon from '../images/remove-icon.png'
+import starIcon from '../images/star-icon.png'
+
 
 type Props = {
   Poster: string;
@@ -47,7 +51,7 @@ export default function MovieElement(props: Props) {
       <div className="right">
         <div className="title-div">
           <span className="title">{props.Title}</span>{" "}
-          <img src="../../public/images/star-icon.png" alt="star icon" />
+          <img src={starIcon} alt="star icon" />
           <span className="metascore">
            {"  "} {props.Metascore !== undefined ? Number.isNaN(props.Metascore / 10) ? 0.0 : props.Metascore/10 : 0.0}
           </span>
@@ -60,7 +64,7 @@ export default function MovieElement(props: Props) {
           ) : (
             <button className="watchlist-btn" onClick={handleClick}>
               <img
-                src={`../../public/images/${isAdded ? "remove" : "add"}-icon.png`}
+                src={isAdded ? removeIcon : addIcon}
                 alt="add to watch list btn"
               />
               <span>{isAdded ? " Remove" : " Watchlist"}</span>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MovieList from "../components/MovieList";
 import { Link } from "react-router-dom";
+import addIcon from '../images/add-icon.png'
 
 type Props = {};
 
@@ -52,7 +53,7 @@ export default function List({}: Props) {
         <div className="watchlist-default">
           <p>Your watchlist is looking a little empty...</p>
           <Link to="/" className="add-movies">
-            <img src="../../public/images/add-icon.png" alt="" />
+            <img src={addIcon} alt="" />
             <span> Let's add some movies!</span>
           </Link>
         </div>

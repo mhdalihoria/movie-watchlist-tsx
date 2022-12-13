@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MovieList from "../components/MovieList";
+import defaultMovieIcon from "../images/default-movie-icon.png"
 
 type Props = {};
 interface movieObj {
@@ -127,7 +128,7 @@ export default function Home({}: Props) {
         ) : search.length === 0 ? (
           <div className="default">
             <img
-              src="../../public/images/default-movie-icon.png"
+              src={defaultMovieIcon}
               alt="default movie icon"
             />
             <p>Start Exploring</p>
