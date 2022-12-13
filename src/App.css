@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  background: #121212;
+  color: #a5a5a5;
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  background: url(../src/images/image\ 36.png);
+  height: 200px;
+  width: 100%;
+  object-fit: fill;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.big-text {
+  font-size: 2.6rem;
+  font-weight: 800;
+  background: none;
+  color: white;
+}
+
+.small-text {
+  background: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.small-text:hover {
+  opacity: 0.7;
+}
+
+.small-text a {
+  text-decoration: none;
+  color: white;
+  background: none;
+}
+
+.search-bar {
+  width: 50%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  transform: translateY(-50%);
+}
+
+.input {
+  background: #2e2e2f;
+  color: #a5a5a5;
+  border: none;
+  margin: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px 0px 0px 6px;
+  padding: 11px 11px 11px 17px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.input:focus {
+  outline: none !important;
+}
+
+.btn {
+  border: none;
+
+  color: #fff;
+  font-size: 0.9rem;
+
+  padding: 9px 11px 9px 17px;
+  gap: 8px;
+
+  width: 120px;
+  height: 38px;
+
+  background: #4b4b4b;
+  border-radius: 0px 6px 6px 0px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.movie-list {
+  width: 40%;
+  margin: auto;
+}
+
+.delete-all button {
+  padding: 10px 25px;
+  margin-top: 2em;
+  border: none;
+  background: #2e2e2f;
+  border-radius: 15px;
+  width: 100%;
+}
+.delete-all button:hover {
+  opacity: 0.7;
+}
+
+.default,
+.error,
+.watchlist-default {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.error,
+.watchlist-default {
+  width: 400px;
+  font-size: 1.17rem;
+  line-height: 1.7rem;
+}
+.watchlist-default {
+  width: 400px;
+  font-weight: 800;
+  font-size: 1.13rem;
+}
+
+.error p,
+.watchlist-default p {
+  color: #2e2e2f;
+}
+
+.default {
+  width: 150px;
+}
+
+.default img {
+  width: 75px;
+  height: auto;
+  color: #2e2e2f;
+}
+
+.default p {
+  font-size: 1.17rem;
+  color: #2e2e2f;
+  padding-top: 0.5rem;
+}
+
+.add-movies {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.add-movies span {
+  color: white;
+}
+
+.movie-container {
+  display: flex;
+  width: 100%;
+  margin: 1rem 0;
+
+  border-bottom: 1px solid grey;
+  padding-bottom: 2em;
+}
+
+.left {
+  width: 30%;
+}
+
+.left img {
+  width: 80%;
+  object-fit: fill;
+}
+
+.right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.title-div {
+  justify-content: flex-start;
+}
+
+.title {
+  font-size: 1.17rem;
+  color: #fff;
+}
+
+.metascore {
+  font-size: 0.75rem;
+  color: white;
+}
+
+.movie-info-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-info-div span {
+  color: white;
+  font-size: 0.85rem;
+}
+
+.movie-info-div button {
+  border: none;
+}
+.movie-info-div button:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.movie-info-div img {
+  width: 0.75rem;
+  height: auto;
+}
+
+.plot-div p {
+  line-height: 1.45rem;
+}
+
+@media (max-width: 1200px) {
+  .movie-list {
+    width: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .movie-list {
+    width: 75%;
+  }
+
+  .big-text {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .movie-list {
+    width: 90%;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .movie-info-div span {
+    font-size: 0.75rem;
+    margin: 1rem 0;
+  }
+  .plot-div p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  .big-text {
+    font-size: 2rem;
+  }
+  .btn {
+    padding: 9px 11px 9px 10px;
+
+    width: 100px;
+  }
+}
