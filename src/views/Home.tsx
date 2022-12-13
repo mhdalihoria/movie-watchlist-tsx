@@ -127,7 +127,7 @@ export default function Home({}: Props) {
         ) : search.length === 0 ? (
           <div className="default">
             <img
-              src="../src/images/default-movie-icon.png"
+              src="../../public/images/default-movie-icon.png"
               alt="default movie icon"
             />
             <p>Start Exploring</p>

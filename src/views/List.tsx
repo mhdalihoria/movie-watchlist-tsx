@@ -52,7 +52,7 @@ export default function List({}: Props) {
         <div className="watchlist-default">
           <p>Your watchlist is looking a little empty...</p>
           <Link to="/" className="add-movies">
-            <img src="../src/images/add-icon.png" alt="" />
+            <img src="../../public/images/add-icon.png" alt="" />
             <span> Let's add some movies!</span>
           </Link>
         </div>

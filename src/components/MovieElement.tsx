@@ -47,7 +47,7 @@ export default function MovieElement(props: Props) {
       <div className="right">
         <div className="title-div">
           <span className="title">{props.Title}</span>{" "}
-          <img src="../src/images/star-icon.png" alt="star icon" />
+          <img src="../../public/images/star-icon.png" alt="star icon" />
           <span className="metascore">
            {"  "} {props.Metascore !== undefined ? Number.isNaN(props.Metascore / 10) ? 0.0 : props.Metascore/10 : 0.0}
           </span>
@@ -60,7 +60,7 @@ export default function MovieElement(props: Props) {
           ) : (
             <button className="watchlist-btn" onClick={handleClick}>
               <img
-                src={`../src/images/${isAdded ? "remove" : "add"}-icon.png`}
+                src={`../../public/images/${isAdded ? "remove" : "add"}-icon.png`}
                 alt="add to watch list btn"
               />
               <span>{isAdded ? " Remove" : " Watchlist"}</span>
