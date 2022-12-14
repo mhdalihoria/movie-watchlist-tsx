@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { movieObj } from "../components/Interface";
 import MovieList from "../components/MovieList";
 import defaultMovieIcon from "../images/default-movie-icon.png"
 
+
 type Props = {};
-interface movieObj {
-  Poster: string;
-  Title: string;
-  Type: string;
-  Year: string;
-  imdbID: string;
-}
+
 
 export default function Home({}: Props) {
   const [query, setQuery] = useState<string>("");

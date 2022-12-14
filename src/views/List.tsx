@@ -2,18 +2,14 @@ import React, { useEffect, useState } from "react";
 import MovieList from "../components/MovieList";
 import { Link } from "react-router-dom";
 import addIcon from '../images/add-icon.png'
+import { movieObj } from "../components/Interface";
+
 
 type Props = {};
 
 export default function List({}: Props) {
   const [moviesFromStorage, setMoviesFromStorage] = useState<
-    {
-      Poster: string;
-      Title: string;
-      Type: string;
-      Year: string;
-      imdbID: string;
-    }[]
+    movieObj[]
   >([]);
 
   const [fromWatchlist, setFromWatchlist] = useState<boolean>(true);
