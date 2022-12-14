@@ -28,3 +28,13 @@
 
 - This version of the project brought a better UX/UI experience to the table as well as small improvements.
 
+## How to Use?
+
+- Upon visiting the homepage the user has the option of typing in a movie name, or visit the watchlist page. 
+
+- If the user chose to type in a name. They will have the results of their search appear in a list. Each list has a "movie entry" that will display information about that specific movie, such as the poster, the title, rating and a button to add/remove movies to/from the watchlist, etc...
+
+- Once a movie is added to the watchlist, it will similarly appear on the watchlist page compared to the home page. 
+
+- And had the user choose to empty their watchlist, they can simply press on the "delete all" button, to clear their list and make room for more movies to watch!
+
